@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-service
 
 PRODUCT_PACKAGES += \
-    bootctrl.mt6769
+    bootctrl.mt6768
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
