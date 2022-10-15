@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/TECNO-Mobile-CH6n
+DEVICE_PATH := device/tecno/CH6n
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -91,6 +91,11 @@ TARGET_BOARD_PLATFORM := mt6768
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
+TW_HAS_NO_RECOVERY_PARTITION := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
